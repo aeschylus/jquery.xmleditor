@@ -107,13 +107,8 @@ textarea:focus,input:focus {
 }
 
 .xml_element {
-	border: 1px solid #aaaabb;
 	font-size: 14px;
-	box-shadow: 4px 3px 3px 0 #CCE8F1;
 	margin-bottom: 10px;
-	background-color: #fff;
-	-webkit-border-radius: 6px 6px 6px 6px;
-	-moz-border-radius: 6px 6px 6px 6px;
 }
 
 .xml_element .xml_element:last-child {
@@ -144,46 +139,31 @@ textarea:focus,input:focus {
 	padding: 4px 1px 1px 7px;
 	line-height: 22px;
 	height: 22px;
-	-webkit-border-radius: 6px 6px 0px 0px;
-	-moz-border-radius: 6px 6px 0px 0px;
 	border-bottom: 1px solid #bbbbbb;
 	margin-bottom: 12px;
 }
 
 
 .top_level_element_group > .element_header {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#dddddd');
-	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#dddddd));
-	background: -moz-linear-gradient(top,  #FFFFFF,  #dddddd);
 }
 
 .top_level_element_group > * > * > .element_header {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFFFF', endColorstr='#e9e9eb');
-	background: -webkit-gradient(linear, left top, left bottom, from(#FAFFFF), to(#e9e9eb));
-	background: -moz-linear-gradient(top,  #FAFFFF,  #e9e9eb);
 }
 
 .top_level_element_group > * > * > * > * > .element_header {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5FFFF', endColorstr='#f1f1f3');
-	background: -webkit-gradient(linear, left top, left bottom, from(#F5FFFF), to(#f1f1f3));
-	background: -moz-linear-gradient(top,  #F5FFFF,  #f1f1f3);
 }
 
 .top_level_element_group > * > * > * > * > * > * > .element_header {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0FFFF', endColorstr='#f5f5f9');
-	background: -webkit-gradient(linear, left top, left bottom, from(#F0FFFF), to(#f5f5f9));
-	background: -moz-linear-gradient(top,  #F0FFFF,  #f5f5f9);
 }
 
 .xml_tab_area > .ui-tabs-nav  {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeFF', endColorstr='#CDF2E6');
-	background: -webkit-gradient(linear, left top, left bottom, from(#eeeeFF), to(#CDF2E6));
-	background: -moz-linear-gradient(top,  #eeeeFF,  #CDF2E6);
 }
 
 .xml_element.selected {
-	border: 1px solid #EB8F00;
-	box-shadow: 0px 0px 6px 1px #FBD850;
+    font-size:110%;
+    box-sizing:border-box;
+    border-left: 2px solid cyan;
+    transition: all .2s ease-out;
 }
 
 .xml_element.selected > .element_header {
@@ -222,7 +202,7 @@ textarea:focus,input:focus {
 	font-weight: bold;
 	margin: 0px 2px;
 	background-color: #eee;
-	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+	font-family: Optima, Futura, sans-serif;
 	vertical-align: 50%;
 	cursor: pointer;
 }
@@ -420,7 +400,7 @@ textarea:focus,input:focus {
 }
 
 #xml_editor {
-	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+	font-family: Optima, Futura, sans-serif;
 	font-size: 14px;
 	background-color: #fff;
 }
