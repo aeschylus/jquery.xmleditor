@@ -2424,27 +2424,27 @@ XMLElement.prototype.addTopActions = function () {
 	var self = this;
 	var topActionSpan = $("<li class='top_actions'/>");
 	// create move up button and callback for element
-	$('<input>').attr({
-		'type' : 'button',
-		'value' : '\u2193',
+	$('<a href="javascript:void(0);">').attr({
+		'class' : 'icon downarrow',
+		'value' : '',
 		'id' : this.guiElementID + '_down'
 	}).appendTo(topActionSpan).click(function(){
 		self.editor.guiEditor.moveSelected();
 	});
 
 	// create move up button and callback for element
-	$('<input>').attr({
-		'type' : 'button',
-		'value' : '\u2191',
+	$('<a href="javascript:void(0);">').attr({
+		'class' : 'icon uparrow',
+		'value' : '',
 		'id' : this.guiElementID + '_up'
 	}).appendTo(topActionSpan).click(function(){
 		self.editor.guiEditor.moveSelected(true);
 	});
 
 	// create delete button and callback for element
-	$('<input>').attr({
-		'type' : 'button',
-		'value' : 'X',
+	$('<a href="javascript:void(0);">').attr({
+		'class' : 'icon xmark',
+		'value' : '',
 		'id' : this.guiElementID + '_del'
 	}).appendTo(topActionSpan).click(function(){
 		self.editor.guiEditor.deleteSelected();
